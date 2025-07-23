@@ -1,0 +1,114 @@
+/* A set of default style */
+:root {
+  /* Generic sizing for the page */
+  --wrapper-height: 80vh;
+  --avatar-max-width: 8rem;
+
+  /* Fonts for different elements */
+  --font-family: sans-serif;
+  --font-family-header: sans-serif;
+  --font-family-list: monospace;
+
+  /* Colors you'll see cascade through the elements */
+  --color-bg: #ffe5f3; /* Used for the page body background */
+  --color-bg-alt: #ffffff; /* Used for social icons on hover */
+  --color-text-main: #000000; /* List text ann social icons on hover */
+  --color-primary: #80144e; /* Headers and borders */
+  --color-header: #f4bedb;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Page structure */
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+}
+.wrapper {
+  min-height: var(--wrapper-height);
+  place-items: center;
+  margin: 1rem 1rem 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Typography */
+p {
+  line-height: 1.5 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-text-main);
+}
+h1 {
+  display: inline-flex;
+  color: var(--color-primary);
+  justify-content: center;
+}
+header {
+  border-bottom: 1px dashed var(--color-gray-20);
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+/* Link styles */
+a:link,
+a:visited {
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  transition: background 0.2s linear;
+  font-weight: 500;
+}
+a:hover,
+a:active,
+a:focus {
+  background: var(--color-primary);
+  color:var(--color-bg);
+}
+a.remix:hover {
+  background: var(--color-primary);
+  color:var(--color-bg-alt);
+  border-color: var(--color-primary);
+}
+.img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.illustration {
+  max-height: var(--avatar-max-width);
+}
+/* Navigation grid */
+.footer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+a.remix {
+  background-color: var(--color-bg-alt);
+  border: 2px solid var(--color-text-main);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.instructions {
+    padding:0.5rem 0 1rem 0;
+}
