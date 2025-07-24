@@ -99,7 +99,7 @@ a.remix:hover {
 }
 a.remix {
   background-color: white;
-  border: 2px solid var(--color-text-main);
+  border: 2px solid var(--color-primary);
   border-radius: 5px;
   padding: 0.5rem;
   font-weight: bold;
